@@ -1,0 +1,163 @@
+/* CastVote.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.cast-vote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 300px;
+  padding: 12px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.party-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  width: 350px;
+}
+
+.party-button img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.party-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.party-button:active {
+  transform: translateY(0);
+}
+
+.party-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.home-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.home-button:active {
+  transform: translateY(0);
+}
+
+.confirmation-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.confirmation-message img {
+  width: 40px; /* Same as party-button logo size */
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.confirmation-message span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin: 5px 0; /* Add some space between the spans */
+}
+
+.success-notice {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .party-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
